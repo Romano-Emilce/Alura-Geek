@@ -1,0 +1,365 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+/* bases */
+body{
+    font-size: 1rem;
+}
+.bg-color{
+    background-color: #5D04D9;
+}
+.bg-white{
+    background-color: white;
+}
+.w-color{
+    color: white;
+}
+.b-color{
+    color: black;
+}
+.border{
+    border: 3px solid black;
+}
+.border-radius{
+    border-radius: 10px;
+
+}
+.text-aling-center{
+    text-align: center;
+}
+.auto{
+    padding: auto;
+    margin: auto;
+}
+
+.flex{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.w-color-off{
+    color: rgba(255, 255, 255, 0.561);
+}
+
+.w-medium{
+    width: 11.5625rem;
+    height: 11.625rem; 
+}
+.w-large{
+    width: 12rem;
+
+}
+img{
+    max-width: 100%;
+}
+/* font family */
+.press-start-2p-regular {
+    font-family: "Press Start 2P", system-ui;
+    font-weight: 400;
+    font-style: normal;
+}
+
+.ibm-plex-mono-regular {
+    font-family: "IBM Plex Mono", monospace;
+    font-weight: 400;
+    font-style: normal;
+  }
+.ibm-plex-mono-bold {
+    font-family: "IBM Plex Mono", monospace;
+    font-weight: 700;
+    font-style: normal;
+  }
+.pixelify-sans{
+  font-family: "Pixelify Sans", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.press-start-2p-bold{
+    font-family: "Press Start 2P", system-ui;
+    font-weight: 700;
+    font-style: normal;
+}
+
+/* header */
+
+header{
+    height:4rem ;
+}
+
+/* main */
+
+.main-position{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: flex-start;
+    width: 100%;
+}
+
+h1{
+    letter-spacing: 0.2rem;
+    font-size: 1.4rem;
+    padding: 1rem;
+    margin-top: 1rem;
+    margin-bottom: 2rem;
+    text-align: center;
+}
+
+/* seccion figure */
+
+.section-figure{
+    order: 1;
+    width: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin: 2rem;
+    width: 60%;
+
+}
+
+.grid-figure{
+    display: grid;
+    grid-template-columns: auto auto auto;
+    grid-template-rows: 1fr 1fr 1fr;
+    box-shadow: -5px 5px 5px rgba(0, 0, 0, 0.149);
+    gap: 1rem;
+    padding: 1rem;
+    
+}
+
+/* figure */
+
+.figure{
+    padding: 0.6rem;
+    width: 12.25rem;
+    height: 17.5rem;
+    display: flex;
+    flex-direction:column ;
+    justify-content: center;
+    align-items: center;
+    gap: 0.625rem;
+    box-shadow: -5px 5px 10px rgba(0, 0, 0, 0.465);
+
+}
+
+.figure-text{
+    gap: 1.8rem;
+    line-height:2rem ;
+    
+}
+
+.figure-price{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    gap: 4rem;
+}
+
+/* seccion agregar productos */
+
+.section-agregar-productos{
+    order: 2;
+    width: 15rem;
+    margin: 2rem;
+    gap: 2rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 2rem;
+    
+}
+
+.h2{
+    font-size: 1.2rem;
+    font-weight: 400;
+    text-align: center;
+
+}
+
+.botones{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 0.8rem;
+}
+
+.bt-enviar{
+    width: 7rem;
+    border-radius: 9px;
+    padding: 0.6rem;
+    background-color: #03318C;
+    color: white;
+    border-color: #03318C;
+    font-family: "IBM Plex Mono", monospace;
+    font-weight: 500;
+    font-style: normal;
+}
+
+.bt-limpiar{
+    width: 7rem;
+    border-radius: 9px;
+    padding: 0.6rem;
+    font-family: "IBM Plex Mono", monospace;
+    font-weight: 500;
+    font-style: normal;
+    border-color: #03318C;
+    color: #03318C;
+    background-color: white;
+
+}
+
+.input{
+    border-color: #03318C;
+    border-radius: 20px;
+    padding: 0.5rem;
+    margin-bottom: 1rem;
+    width: 15rem;
+}
+
+::placeholder{
+    font-family: "IBM Plex Mono", monospace;
+    font-weight: 700;
+    font-style: normal;
+    color: #03318C;
+
+}
+
+/* Footer */
+
+footer{
+    gap: 0.5rem;
+    padding: 2.5rem;
+}
+
+/* media queries */
+@media (max-width:970px){
+    .section-figure{
+        margin: 1rem;
+    }
+
+    .w-medium{
+        width: auto;
+        height: auto;
+    }
+    .figure {
+        padding: 0.6rem;
+        width: auto;
+        height: auto;
+    }
+    .figure-price{
+        gap: 1.1rem;
+        font-size: 0.96rem;
+    }
+    .figure-text{
+        gap:auto;
+        line-height: auto;
+    }
+}
+
+/* mq mobile */
+@media (max-width: 768px){
+    .main-position{
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        width: auto;
+        
+    }
+    .section-figure{
+        order: 2;
+        margin: 1rem;
+        padding: 0.5rem;
+        width: auto;
+    }
+
+    .grid-figure{
+        width: auto;
+        grid-template-columns: 1fr 1fr;
+        box-shadow: none;
+    }
+    .section-agregar-productos{
+        order: 1;
+        margin: 1rem;
+        padding: 0.5rem;
+
+    }
+    .figure{
+        margin: 1rem;
+        padding: 0.625em;
+        width: 12.25em;
+        height: 17.5em;
+        display: flex;
+        flex-direction:column ;
+        justify-content: center;
+        align-items: center;
+        gap: 0.625em;
+        box-shadow: -5px 5px 10px rgba(0, 0, 0, 0.465);
+    
+    }
+    
+    .figure-text{
+        gap: 1.8rem;
+        line-height:2rem ;
+        
+    }
+    
+    .figure-price{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        gap: 4rem;
+    }
+}
+
+@media (max-width: 500px){
+    .grid-figure{
+        width: auto;
+        grid-template-columns: 1fr;
+        box-shadow: none;
+    }
+
+    h1{
+        font-size: 1.1rem;
+    }
+
+    .section-figure{
+        width: auto;
+    }
+    .figure{
+        margin: 1rem;
+        padding: 0.625em;
+        width: 12.25em;
+        height: 17.5em;
+        display: flex;
+        flex-direction:column ;
+        justify-content: center;
+        align-items: center;
+        gap: 0.625em;
+        box-shadow: -5px 5px 10px rgba(0, 0, 0, 0.465);
+    
+    }
+    
+    .figure-text{
+        gap: 1.8rem;
+        line-height:2rem ;
+        
+    }
+    
+    .figure-price{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        gap: 4rem;
+    }
+}
