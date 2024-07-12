@@ -28,7 +28,7 @@
             <h1  class="press-start-2p-bold "> MIS PRODUCTOS : </h1>
 
             <div class="grid-figure">
-                <figure class=" figure border-radius border bg-color " id="figure_cocodrilo">
+                <figure class=" figure border-radius border bg-color " id="figure_cocodrilo" data-lista>
                     <div>
                         <img src="img/cocodrilo.png" alt="Dibujo de cocodrilo soteniendo globos " class=" border border-radius bg-white w-medium" id="img_cocodrilo"> 
                     </div>
@@ -45,7 +45,7 @@
                     </div>
                 </figure>
 
-                <figure class=" figure border-radius border bg-color " id="figure_pato">
+                <figure class=" figure border-radius border bg-color " id="figure_pato" data-lista>
                     <div>
                         <img src="img/dibujos-animados.png" alt="Dibujo de un pato" class=" border border-radius bg-white w-medium" id="img_pato"> 
                     </div>
@@ -62,7 +62,7 @@
                     </div>
                 </figure>
 
-                <figure class=" figure border-radius border bg-color " id="figure_cohete">
+                <figure class=" figure border-radius border bg-color " id="figure_cohete" data-lista>
                     <div>
                         <img src="img/estrella.png" alt="Dibujo de cohete" class=" border border-radius bg-white w-medium" id="img_cohete"> 
                     </div>
@@ -79,7 +79,7 @@
                     </div>
                 </figure>
 
-                <figure class=" figure border-radius border bg-color " id="figure_fantasma">
+                <figure class=" figure border-radius border bg-color " id="figure_fantasma"data-lista>
                     <div>
                         <img src="img/fantasma.png" alt="Dibujo de fantasma" class=" border border-radius bg-white w-medium" id="img_fantasma"> 
                     </div>
@@ -96,7 +96,7 @@
                     </div>
                 </figure>
 
-                <figure class=" figure border-radius border bg-color " id="figure_fruta">
+                <figure class=" figure border-radius border bg-color " id="figure_fruta" data-lista>
                     <div>
                         <img src="img/fruta.png" alt="Dibujo de una naranja" class=" border border-radius bg-white w-medium" id="img_naranja"> 
                     </div>
@@ -113,7 +113,7 @@
                     </div>
                 </figure>
 
-                <figure class=" figure border-radius border bg-color " id="figure_perro">
+                <figure class=" figure border-radius border bg-color " id="figure_perro" data-lista>
                     <div>
                         <img src="img/perro.png" alt="Dibujo de un perrito" class=" border border-radius bg-white w-medium" id="img_perro"> 
                     </div>
@@ -130,7 +130,7 @@
                     </div>
                 </figure>
 
-                <figure class=" figure border-radius border bg-color " id="figure_reno">
+                <figure class=" figure border-radius border bg-color " id="figure_reno" data-lista>
                     <div>
                         <img src="img/reno.png" alt="Dibujo de reno con gorro polar" class=" border border-radius bg-white w-medium" id="img_reno"> 
                     </div>
@@ -147,7 +147,7 @@
                     </div>
                 </figure>
 
-                <figure class=" figure border-radius border bg-color " id="figure_mariposa">
+                <figure class=" figure border-radius border bg-color " id="figure_mariposa" data-lista>
                     <div>
                         <img src="img/silueta.png" alt="Dibujo de una mariposa azul" class=" border border-radius bg-white w-medium" id="img_mariposa"> 
                     </div>
@@ -164,7 +164,7 @@
                     </div>
                 </figure>
 
-                <figure class=" figure border-radius border bg-color " id="figure_unicornio">
+                <figure class=" figure border-radius border bg-color " id="figure_unicornio" data-lista>
                     <div>
                         <img src="img/unicornio.png" alt="Dibujo de un unicornio rosado" class=" border border-radius bg-white w-medium" id="img_unicornio"> 
                     </div>
@@ -185,22 +185,20 @@
 
 <!-- seccion agregar producto -->
 
-        <section  class=" section-agregar-productos">
+        <section  class="section-agregar-productos">
             <h2 class="press-start-2p-regular h2">Agregar producto:</h2>
             <div>
-                <form action="http://localhost:3000/api/submitForm" method="post" id="form" data-formulario> </form>
-                    <input type="text" placeholder="Nombre..." class="input" required id="nombre">
-                    <label for="name">Nombre</label>
+                <form id="form" data-formulario> 
+                    <input type="text" placeholder="Nombre..." class="input" required id="nombre" name="nombre">
 
-                    <input type="number" placeholder="Precio..." class="input" required id="precio">
-                    <label for="number">Precio</label>
+                    <input type="number" placeholder="Precio..." class="input" required id="precio" data-precio name="precio">
 
-                    <input type="url" placeholder="URL de la imagen..." class="input" required id="imagen">
-                    <label for="image">Imagen</label>
-                        <div class="botones">
-                            <button class="bt-enviar" id="bt-enviar" type="submit">Enviar</button>
-                            <button class="bt-limpiar" id="bt-limpiar" type="reset">Limpiar</button>
-                         </div>
+                    <input type="url" placeholder="URL de la imagen..." class="input" required id="imagen" data-imagen name="imagen">
+
+                    <div class="botones">
+                        <button class="bt-enviar" id="btn" type="submit">Enviar</button>
+                        <button class="bt-limpiar" id="btn" type="reset">Limpiar</button>
+                    </div>
                 </form>
 
             </div>
