@@ -32,7 +32,7 @@ function crearCard(id,nombre, precio, imagen){
     //Código para eliminar un cuadro desde el botón "papelera"
     const botonEliminar =card.querySelector(".bt-eliminar");
     botonEliminar.addEventListener("click", () => {
-        conexionApi.borrarCuadro(id)
+        conexionApi.borrarProducto(id)
         .then(() => {
             card.remove();
         })

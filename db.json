@@ -46,7 +46,7 @@
       "id": "8",
       "nombre": "Mariposa",
       "precio": 30,
-      "imagen": "img/silueta.png"
+      "imagen": "img/mariposa.png"
     },
     {
       "id": "9",
@@ -54,6 +54,5 @@
       "precio": 120,
       "imagen": "img/unicornio.png"
     }
-
   ]
 }
