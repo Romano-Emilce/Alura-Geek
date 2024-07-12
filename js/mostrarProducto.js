@@ -4,14 +4,15 @@ const lista = document.querySelector("[data-lista]"); //contenedor de los cuadro
 
 function crearCard(id,nombre, precio, imagen){
     //creamos el marco fluor que tendrá el cuadro, titulo y tecnica...
-    const card = document.createElement("figure");
-    card.className="figure_";
+    const card = document.createElement("div");
+    card.className="figure";
 
     //Creamos la estructura dentro del div <<figure_>>
 
 
 
-    card.innerHTML=`<div>
+    card.innerHTML=`<figure class=" figure border-radius border bg-color " id="figure_cocodrilo" >
+                    <div>
                         <img src="${imagen}" alt="Dibujo de " class=" border border-radius bg-white w-medium">
                     </div>
                     <div class="figure-text">
@@ -24,7 +25,8 @@ function crearCard(id,nombre, precio, imagen){
                                 </svg>                              
                             </button>
                         </div>
-                    </div>`;
+                    </div>
+                </figure>`;
 
 
     //Código para eliminar un cuadro desde el botón "papelera"

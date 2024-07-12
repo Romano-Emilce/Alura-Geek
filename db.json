@@ -1,58 +1,59 @@
 {
   "productos": [
     {
-      "id": 1,
+      "id": "1",
       "nombre": "Cocodrilo",
       "precio": 60,
       "imagen": "img/cocodrilo.png"
     },
     {
-      "id": 2,
+      "id": "2",
       "nombre": "Pato",
       "precio": 40,
-      "imagen": "img/dibujos-animados.png"
+      "imagen": "img/pato.png"
     },
     {
-      "id": 3,
+      "id": "3",
       "nombre": "Cohete",
       "precio": 100,
-      "imagen": "img/estrella.png"
+      "imagen": "img/cohete.png"
     },
     {
-      "id": 4,
+      "id": "4",
       "nombre": "Fantasma",
       "precio": 50,
       "imagen": "img/fantasma.png"
     },
     {
-      "id": 5,
+      "id": "5",
       "nombre": "Naranja",
       "precio": 20,
       "imagen": "img/fruta.png"
     },
     {
-      "id": 6,
+      "id": "6",
       "nombre": "Perro",
       "precio": 80,
       "imagen": "img/perro.png"
     },
     {
-      "id": 7,
+      "id": "7",
       "nombre": "Reno",
       "precio": 90,
       "imagen": "img/reno.png"
     },
     {
-      "id": 8,
+      "id": "8",
       "nombre": "Mariposa",
       "precio": 30,
       "imagen": "img/silueta.png"
     },
     {
-      "id": 9,
+      "id": "9",
       "nombre": "Unicornio",
       "precio": 120,
       "imagen": "img/unicornio.png"
     }
+
   ]
 }

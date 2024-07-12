@@ -4,22 +4,21 @@ async function listarProductos(){
     return conexionConvertida;
 };
 
-async function enviarCuadro(titulo, tecnica, imagen){
-    return await fetch("https://alura-geek-api-delta.vercel.app/cuadros",{
+async function enviarProducto(nombre, precio, imagen){
+    return await fetch("http://localhost:3000/productos",{
         method: "POST",
         headers:{"Content-type":"application/json"},
         body:JSON.stringify({
             nombre:nombre,
             precio:precio,
             imagen:imagen
-        });
+        })
     })
 };
 
 const borrarProducto = async (id) => {
     try{
-        const res= await fetch(`http://localhost:3000/productos/${id}`
-            {
+        const res= await fetch(`http://localhost:3000/productos/${id}`,{
             method: "DELETE"
         });
         return await res.json();
