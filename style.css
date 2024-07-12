@@ -8,6 +8,11 @@
 body{
     font-size: 1rem;
 }
+
+label{
+    display: none;
+}
+
 .bg-color{
     background-color: #5D04D9;
 }
@@ -129,7 +134,7 @@ h1{
 .grid-figure{
     display: grid;
     grid-template-columns: auto auto auto;
-    grid-template-rows: 1fr 1fr 1fr;
+    grid-template-rows: auto auto auto;
     box-shadow: -5px 5px 5px rgba(0, 0, 0, 0.149);
     gap: 1rem;
     padding: 1rem;
@@ -163,8 +168,14 @@ h1{
     justify-content: space-around;
     gap: 4rem;
 }
+.bt-eliminar{
+    border: none;
+    background-color: #5D04D9;
+    cursor: pointer;
 
-/* seccion agregar productos */
+
+}
+/* seccion agregar productos (Formulario)*/
 
 .section-agregar-productos{
     order: 2;
@@ -204,6 +215,11 @@ h1{
     font-family: "IBM Plex Mono", monospace;
     font-weight: 500;
     font-style: normal;
+    cursor: pointer;
+}
+.bt-enviar:hover{
+    background-color: #03318cb1;
+
 }
 
 .bt-limpiar{
@@ -216,6 +232,11 @@ h1{
     border-color: #03318C;
     color: #03318C;
     background-color: white;
+    cursor: pointer;
+
+}
+.bt-limpiar:hover{
+    background-color: #03318cb1;
 
 }
 
@@ -233,6 +254,19 @@ h1{
     font-style: normal;
     color: #03318C;
 
+}
+
+.warning{
+    border-radius: 9px;
+    padding: 0.6rem;
+    background-color: #fc0b0ba6;
+    color: black;
+    font-family: "IBM Plex Mono", monospace;
+    font-weight: 700;
+    font-style: normal;
+    text-align: center;
+    cursor: pointer;
+    display: none;
 }
 
 /* Footer */
@@ -362,4 +396,77 @@ footer{
         justify-content: space-around;
         gap: 4rem;
     }
+}
+
+/*boton dropdown*/
+
+
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+.dropdown-button {
+    background-color: #03318C;
+    color: white;
+    border: none;
+    border-radius: 9px;
+    padding: 0.6rem;
+    font-family: "IBM Plex Mono", monospace;
+    font-weight: 500;
+    font-style: normal;
+    cursor: pointer;
+    border-color: #03318C;
+}
+
+.dropdown-button:hover {
+    background-color: #03318cb1;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 250px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+.dropdown-content li {
+    display: flex;
+    align-items: center;
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.dropdown-content li img {
+    width: 50px;
+    height: 50px;
+    margin-right: 10px;
+}
+
+.dropdown-content li .product-info {
+    display: flex;
+    flex-direction: column;
+}
+
+.dropdown-content li .product-name {
+    font-weight: bold;
+}
+
+.dropdown-content li .product-price {
+    color: #888;
+}
+
+.dropdown-content li:hover {
+    background-color: #f1f1f1;
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
 }
