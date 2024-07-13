@@ -53,12 +53,6 @@
       "nombre": "Unicornio",
       "precio": 120,
       "imagen": "img/unicornio.png"
-    },
-    {
-      "id": "b092",
-      "nombre": "cocodrilo",
-      "precio": "60",
-      "imagen": "http://127.0.0.1:5500/img/cocodrilo.png"
     }
   ]
 }
